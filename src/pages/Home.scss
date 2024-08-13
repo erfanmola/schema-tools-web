@@ -1,0 +1,43 @@
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+#home-section-hero {
+    > div {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+
+        > div {
+            &:first-child {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                > strong {
+                    font-size: 3rem;
+                    font-weight: 900;
+                    background: var(--vp-home-hero-name-background);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: var(--vp-home-hero-name-color);
+                }
+
+                > p {
+                    font-size: 1.125rem;
+                    line-height: 2;
+                }
+            }
+
+            &:last-child {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

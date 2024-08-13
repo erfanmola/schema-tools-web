@@ -1,0 +1,28 @@
+{
+  "name": "schema-tools",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@solid-primitives/i18n": "^2.1.1",
+    "@solidjs/meta": "^0.29.4",
+    "@solidjs/router": "^0.14.1",
+    "bootstrap": "^5.3.3",
+    "lottie-web": "^5.12.2",
+    "solid-bootstrap": "^1.0.20",
+    "solid-icons": "^1.1.0",
+    "solid-js": "^1.8.20"
+  },
+  "devDependencies": {
+    "@mojojoejo/vite-plugin-purgecss": "^1.1.0",
+    "sass": "^1.77.8",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.0",
+    "vite-plugin-solid": "^2.10.2"
+  }
+}

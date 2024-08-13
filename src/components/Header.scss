@@ -1,0 +1,71 @@
+#header-main {
+    padding: 2rem 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+
+    > svg {
+        font-size: 2rem;
+        color: var(--vp-c-indigo-2);
+    }
+
+    > h1 {
+        font-size: 1.5rem;
+        line-height: normal;
+        margin: 0;
+
+        > a {
+            transition: color 0.15s;
+
+            &:hover {
+                color: var(--vp-c-indigo-1);
+            }
+        }
+    }
+
+    > nav {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        > ul {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            > li {
+                > a {
+                    opacity: 0.875;
+                    transition: opacity 0.15s;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    > ul {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        > li {
+            &:first-child {
+                > svg {
+                    cursor: pointer;
+                    font-size: 1.325rem;
+                    opacity: 0.875;
+                    transition: 0.15s opacity;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
